@@ -17,6 +17,7 @@ import {
 
 import { navComponent } from './nav/nav.component';
 import { appRoutes } from './routes';
+import { AuthService } from './user/auth.service';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { appRoutes } from './routes';
     ToastrService,
     EventRouteActivator,
     EventListResolver,
+    AuthService,
     {
       provide: 'canDeactivateCreateEvent',
       useValue: checkDirtyState
