@@ -16,7 +16,8 @@ import {
   EventListResolver,
   EventsListComponent,
   EventService,
-  SessionlistComponent
+  SessionlistComponent,
+  DurationPipe,
 } from './events/index';
 
 import { navComponent } from './nav/nav.component';
@@ -34,7 +35,8 @@ import { AuthService } from './user/auth.service';
     Error404Component,
     CreateSessionComponent,
     SessionlistComponent,
-    CollapsibleWellComponent
+    CollapsibleWellComponent,
+    DurationPipe,
   ],
   imports: [
     BrowserModule,

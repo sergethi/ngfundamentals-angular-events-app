@@ -16,6 +16,8 @@ import { EventService, ISession } from "../shared/index";
 export class EventDetailsComponent{
     event:any
     addMode?:boolean
+    filterBy: string = 'all'
+    sortBy: string = 'name'
     constructor(private eventService:EventService){
 
     }
